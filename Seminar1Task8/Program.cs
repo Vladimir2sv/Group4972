@@ -4,14 +4,16 @@
 // 8 -> 2, 4, 6, 8
 
 Console.WriteLine("Введите число: ");
-int num = int.Parse(Console.ReadLine() ?? "0");
-int lastDigit = 0;
-if (num >= 100 && num < 1000)
+int num = Convert.ToInt32(Console.ReadLine());
+int count = 0;// Складываем все в коробку
+
+if (num % 2 != 0)
 {
-lastDigit = num % 10;
+    num = num - 1;// Делаем число четным
 }
-else
+
+while (count < num)
 {
-System.Console.WriteLine("Число не трехзначное");
+    count = count + 2; // Увеличиваем счетчик
+    Console.Write(count + " ");
 }
-System.Console.WriteLine("Последняя цифра числа: " + lastDigit);
