@@ -96,3 +96,76 @@ PrintResult(BuildLine(n, 2));
 // }
 
 // Prompt("Введите число: ");
+//------------------------------------------------------------------
+
+// Console.WriteLine("Enter a number");
+// Task22 task = new Task22(int.Parse(Console.ReadLine()??"0"));
+// task.printSolution();
+
+// class Task22
+// {
+//     private int n;
+//     public Task22(int n)
+//     {
+
+//         this.n = n;
+
+        
+//     }
+
+
+//     public void printSolution()
+//     {
+//     int[] array = new int[n];
+//     array = Solution(this.n);
+//         for(int i = 0; i < n; i++){
+//             Console.Write(array[i]+", ");
+//         }
+//     }
+//     private int[] Solution(int n)
+//     {
+//             int[] array = new int[n];
+//             for(int i = 1;i <= n; i++)
+//             {
+//                 array[i-1] = i*i;
+//             }
+
+//             return array;
+//     }
+
+
+// }
+
+//--------------------------------------------------------------------
+
+//вводим данные
+// int ReadData(string msg)
+// {
+//     System.Console.WriteLine(msg);
+//     int num = int.Parse(System.Console.ReadLine() ?? "0");
+//     return num;
+// }
+
+// string BuildLine(int x)
+// {
+//     string res= string.Empty;
+//     string res2= string.Empty;
+    
+//     for (int i = 1; i <= x; i++)
+//     {
+//         res = res + i + " ";
+//         res2 = res2 + Math.Pow(i , 2) + " ";
+//     }
+
+//     return res + "\n" +res2 ;
+// }
+
+// // Печатаем результат
+// void PrintRezult(string msg)
+// {
+//     System.Console.WriteLine(msg);
+// }
+
+// int num = ReadData("Введите номер: ");
+
+// PrintRezult(BuildLine(num));
